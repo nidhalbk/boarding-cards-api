@@ -34,7 +34,7 @@ class BoardingCard {
         if ($this->seat && $this->type != 'flight') {
             $description .= sprintf("Sit in seat %s. ", $this->seat);
         }elseif (!$this->seat){
-            $description .= sprintf("No seat assignment. ");
+            $description .= "No seat assignment. ";
         }
         return $description;
     }
